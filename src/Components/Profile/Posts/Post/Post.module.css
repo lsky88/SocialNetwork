@@ -1,0 +1,14 @@
+.post {
+	display: flex;
+	align-items: center;
+	color: #777;
+	justify-content: space-between;
+}
+
+.post img {
+	width: 60px;
+	height: 60px;
+	border: 1px solid #777;
+	border-radius: 50%;
+	margin: 5px 10px;
+}

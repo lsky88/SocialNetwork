@@ -1,0 +1,133 @@
+/*Profile Page*/
+.profilePage {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.ppHeading {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: #111;
+	margin-bottom: 10px;
+	border-radius: 0 0 10px 10px;
+}
+
+.ppWallpaper {
+	width: 100%;
+}
+
+.ppAva {
+	margin-bottom: 20px;
+}
+
+.ppAva img {
+	height: 150px;
+	width: 150px;
+	border-radius: 50%;
+	border: 1px solid #777;
+}
+
+
+.ppBio {
+	width: 100%;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	margin-bottom: 10px;
+}
+
+.ppBio h1 {
+	text-align: center;
+	color: #fff;
+}
+
+.ppNav {
+	display: flex;
+	width: 100%;
+	border-top: 1px solid #777;
+}
+
+.ppNavList {
+	width: 100%;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.navItem {
+	width: 100%;
+	height: 60px;
+	transition: .2s ease-in-out;
+	line-height: 60px;
+	border-radius: 10px;
+	text-align: center;
+}
+
+.navItem:hover {
+	background: rgba(255, 255, 255, 0.2);
+}
+
+.ppContentBox {
+	width: 100%;
+	display: grid;
+	grid-template: 1fr / 5fr 7fr;
+	grid-template-areas: "content posts";
+	grid-gap: 10px;
+}
+
+.ppContent {
+	grid-area: content;
+}
+
+.ppContent h3 {
+	color: #fff;
+}
+
+.ppIntro {
+	background: #111;
+	padding: 10px;
+	border-radius: 10px;
+	margin-bottom: 10px;
+}
+
+.ppPhotos {
+	background: #111;
+	padding: 10px;
+	border-radius: 10px;
+	margin-bottom: 10px;
+}
+
+.ppFriends {
+	background: #111;
+	padding: 10px;
+	border-radius: 10px;
+	margin-bottom: 10px;
+}
+
+.ppFriends p {
+	color: #777;
+}
+
+.friendsItem img {
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+	border: 1px solid #777;
+}
+
+.friendsItem h6 {
+	color: #777;
+}
+
+.ppPostsBox {
+	grid-area: posts;
+}
+
+
+
+
+

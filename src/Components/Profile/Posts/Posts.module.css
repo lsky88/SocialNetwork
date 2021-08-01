@@ -1,0 +1,11 @@
+.posts {
+	background: #111;
+	padding: 10px;
+	border-radius: 10px;
+	margin-bottom: 10px;
+}
+
+.posts h3 {
+	color: #fff
+}
+

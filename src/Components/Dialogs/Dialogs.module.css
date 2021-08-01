@@ -1,0 +1,19 @@
+/*Dialogs*/
+.dialogs {
+	display: grid;
+	grid-template-columns: 3fr 9fr;
+	grid-column-gap: 20px;
+}
+
+.dialogsItems, .messages {
+	display: flex;
+	flex-direction: column;
+	background: #111;
+	border-radius: 10px;
+	height: 80vh;
+}
+
+
+
+
+

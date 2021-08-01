@@ -1,0 +1,45 @@
+.newPost {
+	display: flex;
+	background: #111;
+	padding: 10px;
+	border-radius: 10px;
+	margin-bottom: 10px;
+}
+
+.newPost form {
+	display: flex;
+	align-items: center;
+}
+
+.newPost textarea, button {
+	height: 40px;
+	background: #222;
+	padding: 10px;
+	border-radius: 10px;
+	border: none;
+	outline: none;
+}
+
+.newPost textarea {
+	resize: none;
+	margin-right: 10px;
+	width: calc(100% - 120px);
+	color: #fff;
+	transition: .5s ease-in-out;
+}
+
+.newPost textarea:focus {
+	background: rgba(255, 255, 255, 0.2);
+}
+
+.newPost button {
+	width: 120px;
+	transition: .5s ease-in-out;
+	cursor: pointer;
+	color: #777;
+}
+
+.newPost button:hover {
+	background: rgba(255, 255, 255, 0.2);
+	color: #fff;
+}
