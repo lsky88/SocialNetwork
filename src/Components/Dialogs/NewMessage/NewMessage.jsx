@@ -1,6 +1,6 @@
 import React from 'react';
 import css from './NewMessage.module.css';
-import {sendMessageAC, updateNewMessageBodyAC} from "../../../Redux/State";
+import {sendMessageAC, updateNewMessageBodyAC} from "../../../Redux/dialogsReducer";
 
 const NewMessage = (props) => {
 

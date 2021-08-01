@@ -1,6 +1,6 @@
 import React from 'react';
 import css from "./NewPost.module.css";
-import {addPostAC, updateNewPostTextAC} from "../../../Redux/State";
+import {addPostAC, updateNewPostTextAC} from "../../../Redux/profileReducer";
 
 const NewPost = (props) => {
 
@@ -20,7 +20,7 @@ const NewPost = (props) => {
                 <textarea onChange={onPostChange} ref={newPostElement}
                           placeholder="What's on your mind?"
                           value={props.newPostText}/>
-                <button onClick={addPost}>Add post</button>
+            <button onClick={addPost}>Add post</button>
 
         </div>
     )
