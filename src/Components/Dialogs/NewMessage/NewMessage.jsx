@@ -1,5 +1,6 @@
+import React from 'react';
 import css from './NewMessage.module.css';
-import {sendMessageAC, updateNewMessageBody} from "../../../Redux/State";
+import {sendMessageAC, updateNewMessageBodyAC} from "../../../Redux/State";
 
 const NewMessage = (props) => {
 
@@ -11,7 +12,7 @@ const NewMessage = (props) => {
 
     let onNewMessageChange = (e) => {
         let body = e.target.value;
-        props.store.dispatch(updateNewMessageBody(body))
+        props.store.dispatch(updateNewMessageBodyAC(body))
     }
 
     return (

@@ -12,7 +12,7 @@ let store = {
                 {id: 2, message: "Yo", likesCount: 12},
             ],
 
-            newPostText: ""
+            newPostText: ' '
         },
 
         dialogsPage: {
@@ -26,9 +26,10 @@ let store = {
                 {id: 2, message: "Hello"},
                 {id: 3, message: "What's up? "},
             ],
-            newMessageBody: ""
+            newMessageBody: ' '
         }
     },
+
     _callSubscriber() {
         console.log('state is changed');
     },
@@ -56,7 +57,7 @@ let store = {
             this._callSubscriber(this._state)
         } else if (action.type === SEND_MESSAGE) {
             let body = this._state.dialogsPage.newMessageBody;
-            this._state.dialogsPage.newMessageBody = " ";
+            this._state.dialogsPage.newMessageBody = ' ';
             this._state.dialogsPage.messages.push({id: 3, message: body})
             this._callSubscriber(this._state)
         }
@@ -79,7 +80,7 @@ export const sendMessageAC = () =>
         type: SEND_MESSAGE
     })
 
-export const updateNewMessageBody = (body) =>
+export const updateNewMessageBodyAC = (body) =>
     ({
         type: UPDATE_NEW_MESSAGE_BODY, body: body,
     })
