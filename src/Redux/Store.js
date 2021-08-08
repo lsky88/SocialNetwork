@@ -23,8 +23,9 @@ let store = {
                 {id: 2, message: "Hello"},
                 {id: 3, message: "What's up? "},
             ],
+
             newMessageBody: ' '
-        },
+        }
     },
 
     _callSubscriber() {
