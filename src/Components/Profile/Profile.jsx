@@ -1,6 +1,6 @@
 import css from "./Profile.module.css";
-import Posts from "./Posts/Posts";
-import NewPost from "./New Post/NewPost";
+import NewPostContainer from "./New Post/NewPostContainer";
+import PostsContainer from "./Posts/PostsContainer";
 
 const profilePage = (props) => {
 
@@ -57,10 +57,8 @@ const profilePage = (props) => {
                     </div>
                 </div>
                 <div className={css.ppPostsBox}>
-                    <NewPost newPostText={props.profilePage.newPostText}
-                             dispatch={props.dispatch}/>
-                    <Posts posts={props.profilePage.posts}
-                           dispatch={props.dispatch}/>
+                    <NewPostContainer store={props.store}/>
+                    <PostsContainer store={props.store}/>
                 </div>
             </section>
         </section>

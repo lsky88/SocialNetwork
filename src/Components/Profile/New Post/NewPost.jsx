@@ -1,18 +1,17 @@
 import React from 'react';
 import css from "./NewPost.module.css";
-import {addPostAC, updateNewPostTextAC} from "../../../Redux/profileReducer";
 
 const NewPost = (props) => {
 
     let newPostElement = React.createRef();
 
-    let addPost = () => {
-        props.dispatch(addPostAC());
+    let onAddPost = () => {
+        props.addPost();
     }
 
     let onPostChange = () => {
         let text = newPostElement.current.value;
-        props.dispatch(updateNewPostTextAC(text));
+        props.updateNewPostText(text);
     }
 
     return (
@@ -20,8 +19,7 @@ const NewPost = (props) => {
                 <textarea onChange={onPostChange} ref={newPostElement}
                           placeholder="What's on your mind?"
                           value={props.newPostText}/>
-            <button onClick={addPost}>Add post</button>
-
+            <button onClick={onAddPost}>Add post</button>
         </div>
     )
 }
