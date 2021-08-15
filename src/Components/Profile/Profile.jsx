@@ -2,8 +2,7 @@ import css from "./Profile.module.css";
 import NewPostContainer from "./New Post/NewPostContainer";
 import PostsContainer from "./Posts/PostsContainer";
 
-const profilePage = (props) => {
-
+const profilePage = () => {
     return (
         <section className={css.profilePage}>
             <section className={css.ppHeading}>
@@ -57,8 +56,8 @@ const profilePage = (props) => {
                     </div>
                 </div>
                 <div className={css.ppPostsBox}>
-                    <NewPostContainer store={props.store}/>
-                    <PostsContainer store={props.store}/>
+                    <NewPostContainer/>
+                    <PostsContainer/>
                 </div>
             </section>
         </section>
